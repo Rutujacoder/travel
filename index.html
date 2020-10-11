@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<style >
+	
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+	header{
+		width: 100%;
+		height: 100vh;
+		
+		background-size: cover;
+		background-position: center;
+		animation :animate 11s ease-in-out infinite;
+	}
+	nav{ 
+		width: 100%;
+		height: 15vh;
+		background:rgba(0,0,0,0.2);
+		color:black;
+		display: flex;
+		justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        
+	}
+	nav .logo{
+		width: 25%;
+		text-align: center;
+		color: white;
+	}
+	
+	nav .menu{
+		width: 40%;
+		 
+		display:flex;
+		justify-content: space-around;
+
+	}
+	nav .menu a{
+		width: 25%;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+	}
+	main{
+		width:100%;
+		height: 85vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color: white; 
+	}
+	section{
+
+
+	}
+	section h3{
+		font-size: 35px;
+		font-weight: 200px;
+		letter-spacing: 3px;
+		text-shadow: 1px 1px 2px black;
+
+
+	}
+	section h1{
+		margin: 30px 0 20px 0;
+		font-size: 55px;
+		font-weight: 700;
+		text-shadow: 2px 1px 5px black;
+		text-transform: uppercase;
+	}
+	section p{
+		font-size: 25px;
+		word-spacing: 2px;
+		margin-bottom: 25px;
+		text-shadow: 1px 1px 1px black;
+
+	}
+	section a{
+		padding: 12px 3px;
+		border-radius: 4px;
+		outline: none;
+		text-transform: uppercase;
+		font-size: 13px;
+		text-decoration: none;
+		letter-spacing: 1px;
+		transition: all .5s ease;
+	}
+	section .btnone{
+		background: #00b894;
+		color: black;
+
+	}
+	.btnone:hover{
+		background: white;
+		color: black;
+
+	}
+	section .btntow{
+		background: white;
+		color: black;
+
+	}
+	.btntow:hover{
+		background: #00b894;
+		color: black;
+
+	}
+	.change_content:after{
+		content:'';
+		animation: changetext 10s infinite linear;
+		color:#00b894;
+
+	}
+	@keyframes changetext{
+		0%{content:"Mumbai";}
+		20%{content:"Aurangabad";}
+		35%{content:"Hydrabadh";}
+		60%{content:"Delhi";}
+		80%{content:"Pune";}
+		100%{content:"Jaipur";}
+	}
+	@keyframes animate{
+		0%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');}
+		20%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('dau2.jpg');}
+		35%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('husen.jpg');}
+		60%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');}
+		80%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');}
+		100%{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('taj.jpg');}
+	}
+	
+	
+	nav .menu a:first-child{
+		color:#00b894;
+	}
+	.gototop{
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		background:black;
+		color: white;
+		bottom: 40px;
+		right: 5px;
+		text-decoration: none;
+		text-align: center;
+		line-height: 50px;
+		
+		font-size: 32px;
+		z-index: 1;
+	}
+
+</style>
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo"><h1 class="animate__animated animate__heartBeat animate__infinite	infinite ">Travel Hunt</h1></div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">gallery</a>
+			<a href="#">about</a>
+			<a href="#">contact</a>
+		</div>
+
+	</nav>
+	
+	
+        <main>
+        	<section>
+		<h3>welcome to india</h3>
+		<h1>DO COME & VISIT <span class="change_content"></span></h1>
+		<p>"india one is not enough"</p>
+		<a href="" class="btnone">learn more</a>
+		<a href="" class="btntow">signup here</a>
+		</section>
+	</main>
+	
+
+
+<a href="#" class="gototop">
+<i class="fas fa-arrow-up"></i></a>
+
+
+
+
+</header>
+	
+
+
+
+
+</body>
+</html>
